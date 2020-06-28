@@ -1,6 +1,4 @@
-﻿
-
-.listDiv 
+﻿.listDiv 
 {
     margin: -10px;
     padding: 0;
@@ -45,10 +43,11 @@ img
 {
     float:right;
     display:inline-block;
-    margin-left:0;
+    margin-left:auto;
     height:50%;
     width:25%;
     margin-top:50px;
+    margin-bottom:auto;
 }
 
 table, th, td
@@ -102,3 +101,49 @@ th.padding
 {
     color:black
 }
+
+.quoteDiv p
+{
+    text-align:center;
+    padding:0;
+
+}
+
+.webDiv tr {
+    background-color: gray;
+}
+
+.webDiv a:hover {
+    background: white;
+}
+
+.webDiv a:visited {
+    color: black;
+}
+
+.webDiv a:link {
+    color: black
+}
+.webDiv .right {
+    margin-left:0;
+    margin-right:auto;
+    margin-top:50px;
+
+}
+
+ul li:hover.ex
+{
+    color:red;
+}
+
+.starwars 
+{
+    color:red;
+    font-weight:bold;
+}
+.gsu
+{
+    color:red;
+    font-weight:bold;
+}
+
