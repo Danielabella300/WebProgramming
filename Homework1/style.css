@@ -1,3 +1,67 @@
 ﻿body
 {
 }
+
+.aboutMe h2
+{
+    padding:0;
+    margin:0;
+    text-align:center;
+}
+
+.aboutMe p
+{
+    padding:0;
+    margin:0;
+    text-align:center;
+}
+
+ul
+{
+    font-family:Arial,sans-serif;
+}
+
+hr
+{
+    width:30%;
+    text-align:left;
+    margin-left:0;
+}
+
+img
+{
+    display:block;
+    margin-left:auto;
+    height:50%;
+    width:25%;
+}
+
+table, th, td
+{
+    border: 1px solid;
+    text-align:center;
+    padding:5px;
+}
+
+th.padding 
+{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+#color
+{
+    background-color:black;
+    color:white;
+}
+
+tr:nth-child(even)
+{
+    background-color:white;
+    color:black;
+}
+tr:nth-child(odd)
+{
+    background-color:black;
+    color:white;
+}
