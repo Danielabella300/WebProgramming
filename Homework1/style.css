@@ -90,6 +90,15 @@ th.padding
 
 .navDiv a:hover
 {
-    background-color:white;
+    background:white;
+}
+.navDiv a:visited
+{
+    color:black;
+
 }
 
+.navDiv a:link
+{
+    color:black
+}
