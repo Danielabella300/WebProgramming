@@ -1,5 +1,18 @@
-﻿body
+﻿
+
+.listDiv 
 {
+    margin: -10px;
+    padding: 0;
+    text-align: center;
+}
+
+
+.listDiv ul li
+{
+    margin:0;
+    padding:0;
+    display:inline;
 }
 
 .aboutMe h2
@@ -30,10 +43,12 @@ hr
 
 img
 {
-    display:block;
-    margin-left:auto;
+    float:right;
+    display:inline-block;
+    margin-left:0;
     height:50%;
     width:25%;
+    margin-top:50px;
 }
 
 table, th, td
@@ -49,19 +64,32 @@ th.padding
     padding-bottom:20px;
 }
 
-#color
+#color tr:nth-child(even)
+{
+    background-color:white;
+    color:black;
+}
+
+#color tr:nth-child(odd)
 {
     background-color:black;
     color:white;
 }
 
-tr:nth-child(even)
+.navDiv tr
+{
+    background-color:gray;
+}
+
+.right
+{
+    margin-left:auto;
+    right:0px;
+    margin-top:-100px;
+}
+
+.navDiv a:hover
 {
     background-color:white;
-    color:black;
 }
-tr:nth-child(odd)
-{
-    background-color:black;
-    color:white;
-}
+
