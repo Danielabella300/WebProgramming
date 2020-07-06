@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        var word = prompt("Check if word is palindrome: ");
+        palindrome(word);
+
+        function palindrome(str) {
+            var string = str.toLowerCase();
+            var beginning = 0;
+            var end = string.length - 1;
+            var palindrome = true;
+            while (beginning < end)
+            {
+                if (string[beginning] != string[end])
+                {
+                    palindrome = false;
+                    break;
+                }
+                beginning++;
+                end--;
+            }
+            if (palindrome)
+            {
+                document.write(word + " is a palindrome");
+            }
+            else
+            {
+                document.write(word + " is not a palindrome");
+            }
+        }
+        
+    </script>
+</body>
+</html>
