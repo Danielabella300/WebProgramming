@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        function myFunction() {
+            var coffee = document.forms[0];
+            var txt = "";
+            var i;
+            for (i = 0; i < coffee.length; i++) {
+                if (coffee[i].checked) {
+                    txt = txt + coffee[i].value + ", ";
+                }
+            }
+            alert(txt + "are in your cart");
+        }
+    </script>
+
+    <form>
+        <h1>Check which items you want to buy</h1>
+        <input type="checkbox" name="grocery" value="Milk">Milk
+        <br />
+        <input type="checkbox" name="grocery" value="Bread">Bread
+        <br />
+        <input type="checkbox" name="grocery" value="Soda">Soda
+        <br />
+        <input type="checkbox" name="grocery" value="Eggs">Eggs
+        <br />
+        <input type="checkbox" name="grocery" value="Pasta">Pasta
+        <br />
+        <input type="button" onclick="myFunction()" value="Check Items">
+  
+
+    </form>
+</body>
+</html>
