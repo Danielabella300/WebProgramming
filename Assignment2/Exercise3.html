@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        input[type=button] {
+            cursor: pointer;
+            text-align: center;
+            margin-top: 5px;
+            margin-right: 5px;
+        }
+    </style>
+    <meta charset="utf-8" />
+    <title></title>
+
+</head>
+<body>
+    <script>
+        function keyboard(button) {
+            var res = document.getElementById("result").innerHTML;
+            if (button.value == "Space")
+            {
+                document.getElementById("result").innerHTML = res + " ";
+            } else if (button.value == "Clear")
+            {
+                document.getElementById("result").innerHTML = "";
+            } else
+            {
+                document.getElementById("result").innerHTML = res + button.value;
+            }
+        }
+    </script>
+
+    <h1>A Very Simple Virtual Keyboard</h1>
+    <input type="button" value="A" id="button" onclick="keyboard(this)" />
+    <input type="button" value="B" id="button2" onclick="keyboard(this)" />
+    <input type="button" value="C" id="button3" onclick="keyboard(this)" />
+    <input type="button" value="D" id="button4" onclick="keyboard(this)" />
+    <input type="button" value="E" id="button5" onclick="keyboard(this)" />
+    <input type="button" value="F" id="button6" onclick="keyboard(this)" />
+    <input type="button" value="G" id="button7" onclick="keyboard(this)" />
+    <input type="button" value="H" id="button8" onclick="keyboard(this)" />
+    <input type="button" value="Space" id="button9" onclick="keyboard(this)" />
+    <p id="result"></p>
+    <input type="button" value="Clear" onclick="keyboard(this)" />
+</body>
+</html>
