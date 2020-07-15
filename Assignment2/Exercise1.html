@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        input[type=button] {
+            cursor:pointer;
+            text-align:center;
+            margin-top:10px;
+        }
+    </style>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        function validateForm() {
+            var x;
+            var x = document.getElementById("fname").value;
+
+            if (x == "") {
+                alert("Name must be filled out");
+            } else {
+                alert("Hello " + x);
+            }
+        }
+    </script>
+
+    <h1>Say Hello To Yourself</h1>
+        Name: <input type="text" size="40" maxlength="30" name="personalName" id="fname"/>
+        <br />
+        <input type="button" value="Click me!" onclick="validateForm()"/>
+    
+</body>
+</html>
