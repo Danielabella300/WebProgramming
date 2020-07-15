@@ -6,10 +6,41 @@
     <title></title>
 </head>
 <body>
-    <h1>A Very Simple Calculator</h1>
-    Number 1: <input type="text" size="40" maxlength="30" name="numberOne" id="numberOne" />
-    <br />
-    Number 2: <input type="text" size="40" maxlength="30" name="numberTwo" id="numberTwo" />
-    <p>Result: </p><p id="result"></p>
+    <script>
+        function myFunction() {
+            var i;
+            var formUsername = document.forms["login"]["username"].value;
+            var formPassword = document.forms["login"]["password"].value;
+            var username = ["user1", "user2", "user3"];
+            var namelength = username.length;
+            var password = ["user1-111", "user2-222", "user3-333"];
+            var passwordlength = password.length;
+            var j = -1;
+            for (i = 0; i < namelength; i++) {
+                if (formUsername == username[i]) {
+                    j = i;
+                }
+            }
+            if (j == -1) {
+                alert("The username does not exist.");
+                return false;
+            }
+            if (formPassword == password[j]) {
+                alert("Log-in Successful");
+                return true;
+            }
+            alert("Incorrect Password");
+            return false;
+        }
+    </script>
+
+    <h1>Log in</h1>
+    <form name="login" onsubmit="return myFunction()">
+        Username: <input type="text" name="username" required/>
+        <br />
+        Password: <input type="password" name="password" required/>
+        <br />
+        <input type="submit" value="Log in">
+    </form>
 </body>
 </html>
