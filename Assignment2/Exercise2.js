@@ -4,9 +4,11 @@ function add() {
     var intx = parseInt(x);
     var inty = parseInt(y);
 
-    if (x == "" || y == "") {
+    if (x == "" || y == "")
+    {
         alert("Missing Numbers in Field(s)");
-    } else {
+    } else
+    {
         var result = intx + inty;
         document.getElementById("result").innerHTML = result;
     }
@@ -18,9 +20,11 @@ function subtract() {
     var intx = parseInt(x);
     var inty = parseInt(y);
 
-    if (x == "" || y == "") {
+    if (x == "" || y == "")
+    {
         alert("Missing Numbers in Field(s)");
-    } else {
+    } else
+    {
         var result = x - y;
         document.getElementById("result").innerHTML = result;
     }
@@ -32,9 +36,11 @@ function multiply() {
     var intx = parseInt(x);
     var inty = parseInt(y);
 
-    if (x == "" || y == "") {
+    if (x == "" || y == "")
+    {
         alert("Missing Numbers in Field(s)");
-    } else {
+    } else
+    {
         var result = x * y;
         document.getElementById("result").innerHTML = result;
     }
@@ -46,9 +52,11 @@ function divide() {
     var intx = parseInt(x);
     var inty = parseInt(y);
 
-    if (x == '' || y == '') {
+    if (x == '' || y == '')
+    {
         alert("Missing Numbers in Field(s)");
-    } else {
+    } else
+    {
         var result = x / y;
         document.getElementById("result").innerHTML = result;
     }
