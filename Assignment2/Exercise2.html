@@ -18,69 +18,7 @@
     <title></title>
 </head>
 <body>
-    <script>
-        function add() {
-            var x = document.getElementById("numberOne").value;
-            var y = document.getElementById("numberTwo").value;
-            var intx = parseInt(x);
-            var inty = parseInt(y);
-
-            if (x == "" || y == "") {
-                alert("Missing Numbers in Field(s)");
-            } else {
-                var result = intx + inty;
-                document.getElementById("result").innerHTML = result;
-            }
-        }
-    </script>
-
-    <script>
-        function subtract() {
-            var x = document.getElementById("numberOne").value;
-            var y = document.getElementById("numberTwo").value;
-            var intx = parseInt(x);
-            var inty = parseInt(y);
-
-            if (x == "" || y == "") {
-                alert("Missing Numbers in Field(s)");
-            } else {
-                var result = x - y;
-                document.getElementById("result").innerHTML = result;
-            }
-        }
-    </script>
-
-    <script>
-        function multiply() {
-            var x = document.getElementById("numberOne").value;
-            var y = document.getElementById("numberTwo").value;
-            var intx = parseInt(x);
-            var inty = parseInt(y);
-
-            if (x == "" || y == "") {
-                alert("Missing Numbers in Field(s)");
-            } else {
-                var result = x * y;
-                document.getElementById("result").innerHTML = result;
-            }
-        }
-    </script>
-
-    <script>
-        function divide() {
-            var x = document.getElementById("numberOne").value;
-            var y = document.getElementById("numberTwo").value;
-            var intx = parseInt(x);
-            var inty = parseInt(y);
-
-            if (x == '' || y == '') {
-                alert("Missing Numbers in Field(s)");
-            } else {
-                var result = x / y;
-                document.getElementById("result").innerHTML = result;
-            }
-        }
-    </script>
+    <script src="Exercise2.js"></script>
 
     <h1>A Very Simple Calculator</h1>
     Number 1: <input type="text" size="40" maxlength="30" name="numberOne" id="numberOne" />
