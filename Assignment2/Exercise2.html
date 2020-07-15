@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        input[type=button] {
+            cursor: pointer;
+            text-align: center;
+            margin-top: 5px;
+            margin-right:5px;
+        }
+
+        input[type=text] {
+            margin-top:5px;
+        }
+    </style>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        function add() {
+            var x = document.getElementById("numberOne").value;
+            var y = document.getElementById("numberTwo").value;
+            var intx = parseInt(x);
+            var inty = parseInt(y);
+
+            if (x == "" || y == "") {
+                alert("Missing Numbers in Field(s)");
+            } else {
+                var result = intx + inty;
+                document.getElementById("result").innerHTML = result;
+            }
+        }
+    </script>
+
+    <script>
+        function subtract() {
+            var x = document.getElementById("numberOne").value;
+            var y = document.getElementById("numberTwo").value;
+            var intx = parseInt(x);
+            var inty = parseInt(y);
+
+            if (x == "" || y == "") {
+                alert("Missing Numbers in Field(s)");
+            } else {
+                var result = x - y;
+                document.getElementById("result").innerHTML = result;
+            }
+        }
+    </script>
+
+    <script>
+        function multiply() {
+            var x = document.getElementById("numberOne").value;
+            var y = document.getElementById("numberTwo").value;
+            var intx = parseInt(x);
+            var inty = parseInt(y);
+
+            if (x == "" || y == "") {
+                alert("Missing Numbers in Field(s)");
+            } else {
+                var result = x * y;
+                document.getElementById("result").innerHTML = result;
+            }
+        }
+    </script>
+
+    <script>
+        function divide() {
+            var x = document.getElementById("numberOne").value;
+            var y = document.getElementById("numberTwo").value;
+            var intx = parseInt(x);
+            var inty = parseInt(y);
+
+            if (x == '' || y == '') {
+                alert("Missing Numbers in Field(s)");
+            } else {
+                var result = x / y;
+                document.getElementById("result").innerHTML = result;
+            }
+        }
+    </script>
+
+    <h1>A Very Simple Calculator</h1>
+    Number 1: <input type="text" size="40" maxlength="30" name="numberOne" id="numberOne" />
+    <br />
+    Number 2: <input type="text" size="40" maxlength="30" name="numberTwo" id="numberTwo" />
+    <p>Result: </p><p id="result"></p>
+    <input type="button" value="Add" onclick="add()" />
+    <input type="button" value="Subtract" onclick="subtract()" />
+    <input type="button" value="Multiply" onclick="multiply()" />
+    <input type="button" value="Divide" onclick="divide()" />
+
+</body>
+</html>
