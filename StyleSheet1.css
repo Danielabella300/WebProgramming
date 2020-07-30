@@ -1,0 +1,37 @@
+﻿#table table, tr {
+    text-align: center;
+    border: 1px solid black;
+    width: 10%;
+    background-color: #eee
+}
+
+#table tr:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+#table a.active {
+    background-color: #4CAF50;
+}
+
+#table a:visited {
+    color: black;
+}
+
+#table a:link {
+    color: black;
+}
+
+#head table, tr {
+    border: 1px solid black;
+    text-align: center;
+    width: 10%;
+}
+
+.welcome {
+    top: 10px;
+}
+
+h1 {
+    text-align: center;
+}
