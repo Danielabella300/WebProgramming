@@ -10,7 +10,7 @@ if ($conn -> connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "delete from account WHERE u_name='$_POST[username]' AND p_word='$_POST[password]'";
+$sql = "delete from accounts WHERE u_name='$_POST[username]' AND p_word='$_POST[password]'";
 if ($conn -> query($sql) === TRUE) {
     echo "Record Deleted Successfully";
     echo "<br/>";

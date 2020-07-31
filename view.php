@@ -16,7 +16,7 @@ $result = $conn -> query($sql);
 echo "<h1>View All Entries</h1>";
 if($result -> num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
-        echo "id: " . $row["id"] . " Username: " . $row["f_name"] . " " . " E-mail: " . $row["e_mail"] .
+        echo "id: " . $row["id"] . " Username: " . $row["u_name"] . " " . " E-mail: " . $row["e_mail"] .
             "<br/>";
     }
     echo "<br/>";

@@ -10,8 +10,7 @@ if ($conn -> connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "UPDATE accounts SET u_name = '$_POST[username]', 
-address='$_POST[address]' WHERE p_word='$_POST[password]'";
+$sql = "UPDATE accounts SET u_name = '$_POST[username]' WHERE p_word='$_POST[password]' AND e_mail='$_POST[email]'";
 if(mysqli_query($conn, $sql)) {
     echo "Record Updated Successfully";
     echo "<br/>";
