@@ -4,7 +4,30 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+    <h1>Delete an Entry</h1>
+    <hr />
+    <form action="delete.php" method="post">
+        First Name: <input type="text" name="fname" />
+        <br />
+        <br />
+        Last Name: <input type="text" name="lname" />
+        <br />
+        <br />
+        Address: <input type="text" name="address" />
+        <br />
+        <br />
+        <input type="submit" value="Delete" /> <input type="reset" value="Clear" />
+    </form>
 </body>
 </html>
