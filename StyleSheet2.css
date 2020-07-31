@@ -1,0 +1,19 @@
+﻿body {
+}
+
+table, th, td, tr {
+    align-content: center;
+    border: 1px solid;
+    text-align: center;
+    border-collapse: collapse;
+    width: 500px;
+    height: 70px;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
